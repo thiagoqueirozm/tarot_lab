@@ -1,160 +1,244 @@
 const cartas = [
+{
+  nome: "O Louco",
+  significado: "Liberdade, Início, Aventura, Potencial",
+  imagem: "imagens/louco.png",
+  simNao: 60,
+  tipo: "maior",
+  elemento: "ar",
+  planeta: "Urano",
+  signo: "Aquario"
+},
+{
+  nome: "O Mago",
+  significado: "Manifestação, Habilidade, Ação, Poder",
+  imagem: "imagens/mago.png",
+  simNao: 95,
+  tipo: "maior",
+  elemento: "ar",
+  planeta: "Mercurio",
+  signo: "Gemeos"
+},
 
-  {
-    nome: "O Louco",
-    significado: "Novos começos, liberdade, aventura e fé no desconhecido.",
-    imagem: "imagens/louco.png",
-    simNao: 60,
-    tipo: "maior"
-  },
-  {
-    nome: "O Mago",
-    significado: "Manifestação, habilidade, ação e poder de realização.",
-    imagem: "imagens/mago.png",
-    simNao: 95,
-    tipo: "maior"
-  },
-  {
-    nome: "A Sacerdotisa",
-    significado: "Intuição, mistério, sabedoria interior e conhecimento oculto.",
-    imagem: "imagens/sacerdotisa.png",
-    simNao: 50,
-    tipo: "maior"
-  },
-  {
-    nome: "A Imperatriz",
-    significado: "Criatividade, abundância, cuidado e crescimento.",
-    imagem: "imagens/imperatriz.png",
-    simNao: 95,
-    tipo: "maior"
-  },
-  {
-    nome: "O Imperador",
-    significado: "Estrutura, liderança, disciplina e autoridade.",
-    imagem: "imagens/imperador.png",
-    simNao: 90,
-    tipo: "maior"
-  },
-  {
-    nome: "O Hierofante",
-    significado: "Tradição, aprendizado, espiritualidade e orientação.",
-    imagem: "imagens/hierofante.png",
-    simNao: 75,
-    tipo: "maior"
-  },
-  {
-    nome: "Os Enamorados",
-    significado: "Escolhas, relacionamentos, alinhamento e valores.",
-    imagem: "imagens/enamorados.png",
-    simNao: 80,
-    tipo: "maior"
-  },
-  {
-    nome: "O Carro",
-    significado: "Determinação, movimento, conquista e direção.",
-    imagem: "imagens/carro.png",
-    simNao: 95,
-    tipo: "maior"
-  },
-  {
-    nome: "A Justiça",
-    significado: "Equilíbrio, verdade, responsabilidade e consequências.",
-    imagem: "imagens/justica.png",
-    simNao: 60,
-    tipo: "maior"
-  },
-  {
-    nome: "O Eremita",
-    significado: "Reflexão, silêncio, sabedoria interior e autoconhecimento.",
-    imagem: "imagens/eremita.png",
-    simNao: 40,
-    tipo: "maior"
-  },
-  {
-    nome: "A Roda da Fortuna",
-    significado: "Mudanças, ciclos, destino e oportunidades.",
-    imagem: "imagens/roda.png",
-    simNao: 70,
-    tipo: "maior"
-  },
-  {
-    nome: "A Força",
-    significado: "Coragem, autocontrole, confiança e força interior.",
-    imagem: "imagens/forca.png",
-    simNao: 90,
-    tipo: "maior"
-  },
-  {
-    nome: "O Pendurado",
-    significado: "Nova perspectiva, pausa, entrega e compreensão.",
-    imagem: "imagens/enforcado.png",
-    simNao: 30,
-    tipo: "maior"
-  },
-  {
-    nome: "A Morte",
-    significado: "Transformação, encerramentos e renascimento.",
-    imagem: "imagens/morte.png",
-    simNao: 50,
-    tipo: "maior"
-  },
-  {
-    nome: "A Temperança",
-    significado: "Moderação, harmonia, integração e paciência.",
-    imagem: "imagens/temperanca.png",
-    simNao: 75,
-    tipo: "maior"
-  },
-  {
-    nome: "O Diabo",
-    significado: "Apego, desejos, sombras e limitações.",
-    imagem: "imagens/diabo.png",
-    simNao: 65,
-    tipo: "maior"
-  },
-  {
-    nome: "A Torre",
-    significado: "Ruptura, revelação, mudança repentina e libertação.",
-    imagem: "imagens/torre.png",
-    simNao: 10,
-    tipo: "maior"
-  },
-  {
-    nome: "A Estrela",
-    significado: "Esperança, inspiração, cura e confiança no futuro.",
-    imagem: "imagens/estrela.png",
-    simNao: 95,
-    tipo: "maior"
-  },
-  {
-    nome: "A Lua",
-    significado: "Inconsciente, intuição, ilusões e emoções profundas.",
-    imagem: "imagens/lua.png",
-    simNao: 45,
-    tipo: "maior"
-  },
-  {
-    nome: "O Sol",
-    significado: "Clareza, alegria, vitalidade e sucesso.",
-    imagem: "imagens/sol.png",
-    simNao: 100,
-    tipo: "maior"
+{
+  nome: "A Sacerdotisa",
+  significado: "Intuição, Mistério, Conhecimento, Silêncio",
+  imagem: "imagens/sacerdotisa.png",
+  simNao: 50,
+  tipo: "maior",
+  elemento: "agua",
+  planeta: "Lua",
+  signo: "Cancer"
+},
 
-  },
-  {
-    nome: "O Julgamento",
-    significado: "Despertar, chamado, renovação e avaliação.",
-    imagem: "imagens/julgamento.png",
-    simNao: 95,
-    tipo: "maior"
-  },
-  {
-    nome: "O Mundo",
-    significado: "Conclusão, realização, integração e plenitude.",
-    imagem: "imagens/mundo.png",
-    simNao: 100,
-    tipo: "maior"
-  },
+{
+  nome: "A Imperatriz",
+  significado: "Fertilidade, Abundância, Criação, Beleza",
+  imagem: "imagens/imperatriz.png",
+  simNao: 95,
+  tipo: "maior",
+  elemento: "terra",
+  planeta: "Venus",
+  signo: "Touro"
+},
+
+{
+  nome: "O Imperador",
+  significado: "Estrutura, Autoridade, Liderança, Controle",
+  imagem: "imagens/imperador.png",
+  simNao: 90,
+  tipo: "maior",
+  elemento: "fogo",
+  planeta: "Marte",
+  signo: "Aries"
+},
+
+{
+  nome: "O Hierofante",
+  significado: "Tradição, Ensino, Valores, Sabedoria",
+  imagem: "imagens/hierofante.png",
+  simNao: 75,
+  tipo: "maior",
+  elemento: "terra",
+  planeta: "Venus",
+  signo: "Touro"
+},
+
+{
+  nome: "Os Enamorados",
+  significado: "Escolha, União, Relacionamento, Harmonia",
+  imagem: "imagens/enamorados.png",
+  simNao: 80,
+  tipo: "maior",
+  elemento: "ar",
+  planeta: "Mercurio",
+  signo: "Gemeos"
+},
+
+{
+  nome: "O Carro",
+  significado: "Vitória, Movimento, Determinação, Conquista",
+  imagem: "imagens/carro.png",
+  simNao: 95,
+  tipo: "maior",
+  elemento: "agua",
+  planeta: "Lua",
+  signo: "Cancer"
+},
+
+{
+  nome: "A Justiça",
+  significado: "Equilíbrio, Verdade, Consequência, Ética",
+  imagem: "imagens/justica.png",
+  simNao: 60,
+  tipo: "maior",
+  elemento: "ar",
+  planeta: "Venus",
+  signo: "Libra"
+},
+
+{
+  nome: "O Eremita",
+  significado: "Reflexão, Busca, Sabedoria, Solidão",
+  imagem: "imagens/eremita.png",
+  simNao: 40,
+  tipo: "maior",
+  elemento: "terra",
+  planeta: "Mercurio",
+  signo: "Virgem"
+},
+
+{
+  nome: "A Roda da Fortuna",
+  significado: "Mudança, Destino, Ciclos, Oportunidade",
+  imagem: "imagens/roda.png",
+  simNao: 70,
+  tipo: "maior",
+  elemento: "fogo",
+  planeta: "Jupiter",
+  signo: "Sagitario"
+},
+
+{
+  nome: "A Força",
+  significado: "Coragem, Domínio, Confiança, Superação",
+  imagem: "imagens/forca.png",
+  simNao: 90,
+  tipo: "maior",
+  elemento: "fogo",
+  planeta: "Sol",
+  signo: "Leao"
+},
+
+{
+  nome: "O Enforcado",
+  significado: "Pausa, Sacrifício, Rendição, Perspectiva",
+  imagem: "imagens/enforcado.png",
+  simNao: 30,
+  tipo: "maior",
+  elemento: "agua",
+  planeta: "Netuno",
+  signo: "Peixes"
+},
+
+{
+  nome: "A Morte",
+  significado: "Transformação, Fim, Renascimento, Mudança",
+  imagem: "imagens/morte.png",
+  simNao: 50,
+  tipo: "maior",
+  elemento: "agua",
+  planeta: "Plutao",
+  signo: "Escorpiao"
+},
+
+{
+  nome: "A Temperança",
+  significado: "Moderação, Cura, Harmonia, Integração",
+  imagem: "imagens/temperanca.png",
+  simNao: 75,
+  tipo: "maior",
+  elemento: "fogo",
+  planeta: "Jupiter",
+  signo: "Sagitario"
+},
+
+{
+  nome: "O Diabo",
+  significado: "Desejo, Apego, Tentação, Materialismo",
+  imagem: "imagens/diabo.png",
+  simNao: 65,
+  tipo: "maior",
+  elemento: "terra",
+  planeta: "Saturno",
+  signo: "Capricornio"
+},
+
+{
+  nome: "A Torre",
+  significado: "Ruptura, Choque, Revelação, Colapso",
+  imagem: "imagens/torre.png",
+  simNao: 10,
+  tipo: "maior",
+  elemento: "fogo",
+  planeta: "Marte",
+  signo: "Aries"
+},
+
+{
+  nome: "A Estrela",
+  significado: "Esperança, Inspiração, Fé, Renovação",
+  imagem: "imagens/estrela.png",
+  simNao: 95,
+  tipo: "maior",
+  elemento: "ar",
+  planeta: "Urano",
+  signo: "Aquario"
+},
+
+{
+  nome: "A Lua",
+  significado: "Ilusão, Intuição, Incerteza, Mistério",
+  imagem: "imagens/lua.png",
+  simNao: 45,
+  tipo: "maior",
+  elemento: "agua",
+  planeta: "Netuno",
+  signo: "Peixes"
+},
+
+{
+  nome: "O Sol",
+  significado: "Sucesso, Clareza, Vitalidade, Alegria",
+  imagem: "imagens/sol.png",
+  simNao: 100,
+  tipo: "maior",
+  elemento: "fogo",
+  planeta: "Sol",
+  signo: "Leao"
+},
+
+{
+  nome: "O Julgamento",
+  significado: "Despertar, Chamado, Renovação, Consciência",
+  imagem: "imagens/julgamento.png",
+  simNao: 90,
+  tipo: "maior",
+  elemento: "fogo",
+  planeta: "Plutao",
+  signo: "Escorpiao"
+},
+
+{
+  nome: "O Mundo",
+  significado: "Conclusão, Realização, Integração, Plenitude",
+  imagem: "imagens/mundo.png",
+  simNao: 100,
+  tipo: "maior",
+  elemento: "terra",
+  planeta: "Saturno",
+  signo: "Capricornio"
+},
       //PAUS
     {
     nome: "Ás de Paus",
