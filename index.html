@@ -9,9 +9,16 @@
 <body>
   <main>
     <h1>🔮 Cyber Mystic Oracle 🔮</h1>
-
+<p>Selecione uma opção:</p>
+<select id="tipoDeck">
+  <option value="todos">Todas as cartas</option>
+  <option value="maior">Apenas Arcanos Maiores</option>
+  <option value="menor">Apenas Arcanos Menores</option>
+</select>
+<br><br>
     <label for="pergunta">Qual sua pergunta?</label>
 <br><br>
+
 
 <input
   type="text"
@@ -19,16 +26,15 @@
   placeholder="Digite sua pergunta..."
 >
 <br><br>
-    <button id="tirarCarta">Tirar carta</button>
+    <button id="tirarCarta">Virar carta</button>
+<br>
 
     <section id="resultado">
-      <img id="imagemCarta" src="" alt="" class="imagem-carta">
+      <img id="imagemCarta" src="imagens/verso.png" alt="Verso da carta" class="imagem-carta">
       <p id="perguntaExibida"></p>
       <h2 id="nomeCarta"></h2>
       <p id="significadoCarta"></p>
       <p id="simNao"></p>
-      <p id="simNaoResp"></p>
-      <p id ="contador"></p>
     </section>
   </main>
 

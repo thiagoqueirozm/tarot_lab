@@ -34,7 +34,6 @@ input:focus {
   max-width: 100%;
   border-radius: 12px;
   margin: 20px auto;
-  display: none;
   box-shadow: 0 0 25px rgba(255, 215, 0, 0.25);
 }
 .imagem-carta:hover {
